@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.load-screen {
+  height: 100dvh;
+  width: 100dvw;
+  background: whitesmoke;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.load-screen svg {
+  height: 10rem;
+  width: 10rem;
+  stroke-dasharray: 700;
+}
+.load-screen .animateSvg {
+  animation: lineDraw 5s infinite ease-in-out;
+}
+@keyframes lineDraw {
+  0% {
+    stroke-dashoffset: 2000;
+  }
+  50% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 2000;
+  }
+}
+
+.container {
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+.container header {
+  width: 100%;
+  height: 7rem;
+  padding: 1vw 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container header .left-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container header .left-container img {
+  height: 5rem;
+  width: 5rem;
+  margin-right: 2rem;
+}
+.container header .left-container p {
+  font-size: 3rem;
+  pointer-events: none;
+}
+.container header .left-container p span {
+  color: orangered;
+  font-size: 4rem;
+}
+.container header .right-container {
+  display: flex;
+  justify-content: space-between;
+  width: 15rem;
+  font-size: 2rem;
+}
+.container header .right-container .social {
+  border-right: 2px solid black;
+  padding-right: 2rem;
+  width: 80%;
+}
+.container header .right-container .social,
+.container header .right-container .color-mode {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.7);
+}
+.container header .right-container .social:hover,
+.container header .right-container .color-mode {
+  cursor: pointer;
+}
+.container header .right-container .color-mode ion-icon {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
