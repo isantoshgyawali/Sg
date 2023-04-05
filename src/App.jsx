@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-    {/* <LoadScreen></LoadScreen> */}
+    <LoadScreen></LoadScreen>
     <div className='container'>  
       <Navbar></Navbar>
     </div>
