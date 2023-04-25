@@ -1,22 +1,15 @@
-import React , { useState , useEffect} from 'react'
-import Navbar from './components/navbar'
-import LoadScreen from './components/loadScreen'
-import loadScreeAnimation from './javaScript/main'
-import './style.css'
+import React from 'react';
+import LoadScreen from './components/loadScreen';
+import Navbar from './components/navbar';
+import './style.css';
 
-function App() {
-    useEffect(()=>{
-      loadScreeAnimation();
-    })
-
+export default function App() {
   return (
     <>
-    <LoadScreen></LoadScreen>
-    <div className='container'>  
-      <Navbar></Navbar>
-    </div>
+      <LoadScreen />
+      <div className='container'>
+        <Navbar />
+      </div>
     </>
-  )
+  );
 }
-
-export default App

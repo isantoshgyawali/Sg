@@ -67,46 +67,27 @@
                 margin-right: 2rem;
             }
 
-            p{
-                font-size: 3rem;
-                pointer-events: none;
-
-                span{
-                    color: orangered;
-                    font-size: 4rem;
-                }
-            }
-
         }
 
         .right-container {
             display: flex;
             justify-content: space-between;
-            width: 15rem;
-            font-size: 2rem;
+            width: 8rem;
+            font-size: 1.7rem;
+        }
 
-            .social {
-                border-right: 2px solid black;
-                padding-right: 2rem;
-                width: 80%;
+        .social {
+            width: 100%;
+            align-self: center;
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                color: rgba(0, 0, 0, 0.65);
             }
 
-            .social,
-            .color-mode {
-                display: flex;
-                justify-content: space-between;
-                color: rgba(0, 0, 0, 0.7);
-            }
-
-            .social:hover,
-            .color-mode {
+            .social:hover {
                 cursor: pointer;
-            }
-
-            .color-mode {
-                ion-icon {
-                    display: none;
-                }
             }
         }
     }
