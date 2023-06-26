@@ -58,29 +58,88 @@
   width: 5rem;
   margin-right: 2rem;
 }
-.container header .left-container p {
-  font-size: 3rem;
-  pointer-events: none;
-}
-.container header .left-container p span {
-  color: orangered;
-  font-size: 4rem;
-}
 .container header .right-container {
   display: flex;
   justify-content: space-between;
-  width: 8rem;
-  font-size: 1.7rem;
+  width: 20rem;
+  font-size: 1.5rem;
 }
 .container header .social {
   width: 100%;
   align-self: center;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .container header .social a {
   color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+}
+.container header .social a:first-child:hover {
+  color: #1c9aef;
+}
+.container header .social a:nth-child(2):hover {
+  color: black;
+}
+.container header .social a:last-child:hover {
+  color: #0073b2;
 }
 .container header .social .social:hover {
   cursor: pointer;
+}
+.container .under-construction {
+  height: calc(100dvh - 7rem);
+  width: 100vw;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  pointer-events: none;
+}
+.container .under-construction .gifOne {
+  height: 20rem;
+  width: min(27rem, 90vw);
+  animation: borderR 10s ease-in-out infinite;
+  box-shadow: 2px 5px 7px 3px rgba(0, 0, 0, 0.75);
+}
+@keyframes borderR {
+  0% {
+    border-radius: 100% 43% 10% 62%/10% 90% 10% 76%;
+  }
+  10% {
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  }
+  20% {
+    border-radius: 79% 21% 92% 8%/30% 64% 36% 70%;
+  }
+  30% {
+    border-radius: 64% 36% 53% 47%/30% 77% 23% 70%;
+  }
+  40% {
+    border-radius: 64% 36% 82% 68%/15% 34% 66% 85%;
+  }
+  50% {
+    border-radius: 26% 74% 82% 18%/49% 65% 35% 51%;
+  }
+  60% {
+    border-radius: 64% 56% 53% 47%/30% 77% 23% 83%;
+  }
+  70% {
+    border-radius: 34% 56% 23% 47%/30% 77% 23% 70%;
+  }
+  80% {
+    border-radius: 64% 36% 53% 77%/30% 67% 13% 70%;
+  }
+  90% {
+    border-radius: 49% 64% 53% 47%/30% 27% 47% 20%;
+  }
+  100% {
+    border-radius: 64% 36% 53% 47%/3% 78% 23% 70%;
+  }
+}
+.container .under-construction .gifTwo {
+  height: 15rem;
 }/*# sourceMappingURL=style.css.map */

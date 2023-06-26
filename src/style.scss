@@ -54,7 +54,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // background: red;
 
         .left-container {
             display: flex;
@@ -72,8 +71,8 @@
         .right-container {
             display: flex;
             justify-content: space-between;
-            width: 8rem;
-            font-size: 1.7rem;
+            width: 20rem;
+            font-size: 1.5rem;
         }
 
         .social {
@@ -81,15 +80,98 @@
             align-self: center;
             display: flex;
             justify-content: space-between;
+            position: relative;
 
             a {
                 color: rgba(0, 0, 0, 0.65);
+                text-decoration: none;
+
+                &:first-child:hover{
+                    color: #1c9aef;
+                }
+                &:nth-child(2):hover{
+                    color: black;
+                }
+                &:last-child:hover{
+                    color: #0073b2;
+                }      
             }
 
             .social:hover {
                 cursor: pointer;
             }
         }
+    }
+
+    .under-construction{
+        height: calc(100dvh - 7rem);
+        width: 100vw;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 2rem;
+        pointer-events: none;
+
+        .gifOne{
+            height: 20rem;
+            width: min(27rem,90vw);
+            // border-radius: 8rem;
+            animation: borderR 10s ease-in-out infinite;
+            box-shadow: 2px 5px 7px 3px rgba(0, 0, 0, 0.75);
+        }
+
+        @keyframes borderR {
+            0%{
+                border-radius: 0100% 43% 10% 62% / 10% 90% 10% 76% ;
+              }
+              
+              10% {
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+              }
+
+              20% {
+                border-radius: 79% 21% 92% 8% / 30% 64% 36% 70% ;
+              }
+
+              30%{
+                border-radius: 64% 36% 53% 47% / 30% 77% 23% 70% ;
+              }
+
+              40%{
+                border-radius: 64% 36% 82% 68% / 15% 34% 66% 85% ;
+              }
+
+              50%{
+                border-radius: 26% 74% 82% 18% / 49% 65% 35% 51% ;
+              }
+
+              60% {
+                border-radius: 64% 56% 53% 47% / 30% 77% 23% 83%;
+              }
+
+               70% {
+                border-radius: 34% 56% 23% 47% / 30% 77% 23% 70%;
+              }
+              
+              80% {
+                border-radius: 64% 36% 53% 77% / 30% 67% 13% 70%;
+              }
+              
+              90% {
+                border-radius: 49% 64% 53% 47% / 30% 27% 47% 20%;
+              }
+
+              100% {
+                border-radius: 64% 36% 53% 47% / 3% 78% 23% 70%;
+              }
+        }
+
+        .gifTwo{
+            height: 15rem;
+        }   
     }
 
 }
