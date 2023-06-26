@@ -25,7 +25,6 @@ export default function navbar() {
           </a>
         </section>
 
-
       </div>
     </header>
   )

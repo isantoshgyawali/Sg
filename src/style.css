@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Black+Ops+One&family=Press+Start+2P&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -54,15 +55,15 @@
   align-items: center;
 }
 .container header .left-container img {
-  height: 5rem;
-  width: 5rem;
-  margin-right: 2rem;
+  height: min(4rem, 10vw);
+  margin-left: 5vw;
 }
 .container header .right-container {
   display: flex;
   justify-content: space-between;
-  width: 20rem;
-  font-size: 1.5rem;
+  width: min(20rem, 50vw);
+  font-size: min(0.8rem, 2vw);
+  font-weight: bold;
 }
 .container header .social {
   width: 100%;
@@ -70,9 +71,10 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  font-family: "Press Start 2P", cursive;
 }
 .container header .social a {
-  color: rgba(0, 0, 0, 0.65);
+  color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
 .container header .social a:first-child:hover {
@@ -101,7 +103,7 @@
 }
 .container .under-construction .gifOne {
   height: 20rem;
-  width: min(27rem, 90vw);
+  width: min(20rem, 90vw);
   animation: borderR 10s ease-in-out infinite;
   box-shadow: 2px 5px 7px 3px rgba(0, 0, 0, 0.75);
 }
