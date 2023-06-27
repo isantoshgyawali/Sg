@@ -8,7 +8,7 @@ export const loadScreeAnimation = () => {
       svg.style.opacity = '0';
       svg.style.transition = 'opacity 750ms ease-in-out'
       resolve();
-    }, 6000));
+    }, 3200));
 
     setTimeout(() => {
       loadScreen.style.display = 'none';
