@@ -13,7 +13,6 @@ export const loadScreeAnimation = () => {
     setTimeout(() => {
       loadScreen.style.display = 'none';
       container.style.display = 'block';
-
     }, 900);
   };
 };
