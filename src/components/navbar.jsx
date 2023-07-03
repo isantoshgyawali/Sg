@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import ImgaeOne from '../images/Logo.svg';
 
 export default function navbar() {
@@ -13,15 +13,15 @@ export default function navbar() {
         <section className="social">
           <a href="https://twitter.com/isantoshgyawali" target='_blanck'>
             {/* <i className="fa-brands fa-twitter"></i> */}
-            <p>Twitter</p>
+            <p data-value="Twitter" className='social-txt'>Twitter</p>
           </a>
           <a href="https://github.com/isantoshgyawali" target='_blanck'>
             {/* <i className="fa-brands fa-github"></i> */}
-            <p>Github</p>
+            <p data-value="Github" className='social-txt'>Github</p>
           </a>
           <a href="https://linkedin.com/in/isantoshgyawali" target='_blanck'>
             {/* <i className="fa-brands fa-linkedin"></i> */}
-            <p>LinkedIn</p>
+            <p data-value="LinkedIn" className='social-txt'>LinkedIn</p>
           </a>
         </section>
 
@@ -29,3 +29,5 @@ export default function navbar() {
     </header>
   )
 }
+
+

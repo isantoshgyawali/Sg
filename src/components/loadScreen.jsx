@@ -1,9 +1,30 @@
-import React, { useEffect } from 'react';
-import { loadScreeAnimation } from '../javaScript/loadingAnimation';
+import React, { useEffect, useRef } from 'react';
+// import { loadScreeAnimation } from '../javaScript/loadingAnimation';
 
 export default function LoadScreen() {
   useEffect(() => {
-    loadScreeAnimation();
+    const loadScreen = document.querySelector('.load-screen');
+    const svg = document.querySelector('.load-screen svg');
+    const container = document.querySelector('.container');
+
+    const handleLoad = async () => {
+      await new Promise(resolve => setTimeout(() => {
+        svg.style.opacity = '0';
+        svg.style.transition = 'opacity 750ms ease-in-out'
+        resolve();
+      }, 3200));
+
+      setTimeout(() => {
+        loadScreen.style.display = 'none';
+        container.style.display = 'block';
+      }, 900);
+    };
+
+    window.addEventListener('load', handleLoad);
+
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
   }, []);
 
   return (
