@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import ImgaeOne from '../images/Logo.svg';
 
-export default function navbar() {
+export default function Navbar() {
 
   return (
     <header>

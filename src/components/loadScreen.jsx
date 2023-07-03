@@ -2,9 +2,13 @@ import React, { useEffect, useRef } from 'react';
 // import { loadScreeAnimation } from '../javaScript/loadingAnimation';
 
 export default function LoadScreen() {
+
+  const loadScreenRef = useRef(null);
+  const svgRef = useRef(null);
+  
   useEffect(() => {
-    const loadScreen = document.querySelector('.load-screen');
-    const svg = document.querySelector('.load-screen svg');
+    const loadScreen = loadScreenRef.current;
+    const svg = svgRef.current;
     const container = document.querySelector('.container');
 
     const handleLoad = async () => {
@@ -28,8 +32,8 @@ export default function LoadScreen() {
   }, []);
 
   return (
-    <div className='load-screen'>
-      <svg className='animateSvg' viewBox="0 0 144 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div className='load-screen' ref={loadScreenRef}>
+      <svg className='animateSvg' ref={svgRef} viewBox="0 0 144 150" fill="none" xmlns="http://www.w3.org/2000/svg">
         <linearGradient id="gradient" gradientTransform="rotate(90)">
           <stop offset="10%" stopColor="orangered" />
           <stop offset="50%" stopColor="red" />
