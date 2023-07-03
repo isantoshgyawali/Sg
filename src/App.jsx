@@ -9,7 +9,7 @@ import './style.css';
 export default function App() {
   return (
     <>
-      <LoadScreen />
+      {/* <LoadScreen /> */}
       <div className='container'>
         <Navbar />
         <Constuction />
