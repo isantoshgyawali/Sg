@@ -9,7 +9,6 @@ export default function LoadScreen() {
   useEffect(() => {
     const loadScreen = loadScreenRef.current;
     const svg = svgRef.current;
-    const container = document.querySelector('.container');
 
     const handleLoad = async () => {
       await new Promise(resolve => setTimeout(() => {
@@ -20,7 +19,6 @@ export default function LoadScreen() {
 
       setTimeout(() => {
         loadScreen.style.display = 'none';
-        container.style.display = 'block';
       }, 900);
     };
 
