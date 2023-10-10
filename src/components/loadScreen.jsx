@@ -16,7 +16,7 @@ export default function LoadScreen() {
         svg.style.opacity = '0';
         svg.style.transition = 'opacity 750ms ease-in-out'
         resolve();
-      }, 3200));
+      }, 2000));
 
       setTimeout(() => {
         loadScreen.style.display = 'none';

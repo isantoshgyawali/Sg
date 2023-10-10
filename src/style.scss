@@ -118,11 +118,12 @@
         pointer-events: none;
 
         .gifOne{
-            height: 20rem;
+            height: 25rem;
             width: min(20rem,90vw);
             // border-radius: 8rem;
-            animation: borderR 10s ease-in-out infinite;
-            box-shadow: 2px 5px 7px 3px rgba(0, 0, 0, 0.75);
+            animation: borderR 15s ease-in-out infinite;
+            // border-radius: 2rem;
+            box-shadow: 2px 0px 15px rgba(0, 0, 0, 0.5);
         }
 
         @keyframes borderR {
