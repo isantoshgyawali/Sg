@@ -1,0 +1,9 @@
+[build]
+  base = "packages/web"
+  publish = "packages/web/dist"
+  command = "pnpm --filter web build"
+
+[dev]
+  command = "pnpm --filter web dev" 
+  port = 3000 
+
