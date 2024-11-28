@@ -1,9 +1,9 @@
 import { create } from "zustand"
 
-export const useBearStore = create((set) => ({
-    isLoading: false,
-    setLoading: (status: boolean) => {
-        set({ isLoading: status})
-    }
+interface BearStoreProps {
+}
+
+export const useBearStore = create<BearStoreProps>((set) => ({
+    something: 'hello there...'
 }))
 

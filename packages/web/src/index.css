@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .img-custom {
+        height: min(4rem, 10vw)
+    }
+}
