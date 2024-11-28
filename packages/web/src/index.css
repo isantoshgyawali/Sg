@@ -6,4 +6,26 @@
     .img-custom {
         height: min(4rem, 10vw)
     }
+    @keyframes moveDownFade {
+    0% {
+      scale: 0;
+      opacity: 1;
+    }
+    50%{
+        scale: 0.9;
+        opacity: 1;
+    }
+    75% {
+        scale: 1;
+    }
+    100% {
+      transform: translateY(2rem);
+      scale: 1.3;
+      opacity: 0;
+    }
+  }
+
+  .animate-moveDownFade {
+    animation: moveDownFade 2s ease-in-out infinite;
+  }
 }
