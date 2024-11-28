@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "strict": true,
+  },
+  "esModuleInterop": true,
+
+  /* Linting */
+  "noUnusedLocals": true,
+  "noUnusedParameters": true,
+}
