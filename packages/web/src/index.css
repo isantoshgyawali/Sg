@@ -4,28 +4,33 @@
 
 @layer utilities {
     .img-custom {
-        height: min(4rem, 10vw)
+        height: min(5rem, 15vw)
     }
+
     @keyframes moveDownFade {
     0% {
+      transform: translateY(-1.5rem);
       scale: 0;
       opacity: 1;
     }
-    50%{
-        scale: 0.9;
-        opacity: 1;
-    }
     75% {
-        scale: 1;
+        transform: translateY(1rem);
+        scale: 0.7;
     }
     100% {
-      transform: translateY(2rem);
-      scale: 1.3;
-      opacity: 0;
+        transform: translateY(1.5rem);
+        scale:0.8;
+        opacity: 0;
     }
   }
 
   .animate-moveDownFade {
     animation: moveDownFade 2s ease-in-out infinite;
   }
+
+  .custom-rotation {
+        text-orientation: sideways-right;
+        writing-mode: vertical-lr;
+        rotate: 180deg;
+    }
 }

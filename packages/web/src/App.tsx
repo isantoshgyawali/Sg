@@ -5,8 +5,7 @@ import LoadScreen from './components/loadScreen';
 import Home from './components/Home';
 import routes from './components/routes'
 import { useRoutes } from 'react-router-dom';
-import MenuBar from './components/MenuBar';
-import Navbar from './components/navbar';
+import { NavBar, MenuBar, SideBar } from './components/BarComponent';
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,14 +28,15 @@ export default function App() {
 
 
   return (
-    <div className='overflow-hidden'>
+    <>
       {isLoading && <LoadScreen isTransitioning={isTransitioning} />}
        <div className={`transition-opacity duration-750 ease-in-out ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
-          <Navbar/>
+          <NavBar/>
           <MenuBar/>
+          <SideBar/>
         <Approutes/>
        </div>
-    </div>
+    </>
   );
 }
 
