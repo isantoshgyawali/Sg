@@ -2,7 +2,7 @@ import Pin from "../images/Pin.svg"
 
 const BubbleMessage = () => {
     return (
-        <div className="flex flex-row items-center fixed left-16 bottom-14 bg-white">
+        <div className="flex flex-row items-center fixed sm:left-16 left-10 bottom-14 bg-white z-50">
             <div className="h-10 aspect-square bg-blue-500 grid place-items-center rounded-full rounded-es mr-1">
                 <p>👋🏻</p>
             </div>

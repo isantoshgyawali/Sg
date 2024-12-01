@@ -33,4 +33,8 @@
         writing-mode: vertical-lr;
         rotate: 180deg;
     }
+  .custom-rotation-two {
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+    }
 }
